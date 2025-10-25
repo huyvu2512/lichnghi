@@ -1,5 +1,5 @@
 {
-  "name": "Lịch Nghỉ",
+  "name": "lichnghi",
   "description": "An intelligent personal calendar to track and remember leave days. Selections are automatically reset daily, while notes are preserved for future reference.",
   "requestFramePermissions": []
 }
