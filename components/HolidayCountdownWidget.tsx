@@ -45,6 +45,10 @@ const HolidayCountdownWidget: React.FC = () => {
                 }
                 const result = await response.json();
                 if (result.code === 'success' && result.data && result.data.date) {
+                    const parsedDate = new Date(result.data.date);
+                    if (isNaN(parsedDate.getTime())) {
+                        throw new Error('Invalid date format from API');
+                    }
                     setTargetDate(result.data.date);
                 } else {
                     throw new Error('Invalid API response');
