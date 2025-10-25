@@ -7,9 +7,10 @@ interface CalendarHeaderProps {
   onChangeMonth: (direction: number) => void;
   onGoToToday: () => void;
   saveStatus: 'idle' | 'saved';
+  downloadButton: React.ReactNode;
 }
 
-const CalendarHeader: React.FC<CalendarHeaderProps> = ({ currentDate, onChangeMonth, onGoToToday, saveStatus }) => {
+const CalendarHeader: React.FC<CalendarHeaderProps> = ({ currentDate, onChangeMonth, onGoToToday, saveStatus, downloadButton }) => {
   const monthName = `Tháng ${currentDate.getMonth() + 1}`;
   const year = currentDate.getFullYear();
   
@@ -43,7 +44,7 @@ const CalendarHeader: React.FC<CalendarHeaderProps> = ({ currentDate, onChangeMo
         </button>
       </div>
       
-      <div className="flex items-center space-x-4 mt-3 sm:mt-0">
+      <div className="flex items-center space-x-2 mt-3 sm:mt-0">
          <div className="relative w-20 h-5">
             <span className={`absolute inset-0 text-sm text-green-600 font-medium transition-all duration-500 ease-out ${saveStatus === 'saved' ? 'opacity-100 transform-none' : 'opacity-0 -translate-y-2'}`}>
               Đã lưu!
@@ -59,6 +60,7 @@ const CalendarHeader: React.FC<CalendarHeaderProps> = ({ currentDate, onChangeMo
              <RealTimeClock />
           </div>
         </button>
+        {downloadButton}
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import ScrollToTopButton from './components/ScrollToTopButton.tsx';
 import { useCalendarData } from './hooks/useCalendarData.ts';
 import Logo from './components/Logo.tsx';
 import Footer from './components/Footer.tsx';
+import DownloadButton from './components/DownloadButton.tsx';
 
 function App() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -46,12 +47,13 @@ function App() {
         </header>
 
         <main className="flex flex-col lg:flex-row gap-8">
-          <div className="flex-1 bg-white p-4 sm:p-6 rounded-xl shadow-md">
+          <div id="calendar-container" className="flex-1 bg-white p-4 sm:p-6 rounded-xl shadow-md">
             <CalendarHeader 
               currentDate={currentDate}
               onChangeMonth={handleChangeMonth}
               onGoToToday={handleGoToToday}
               saveStatus={saveStatus}
+              downloadButton={<DownloadButton elementId="calendar-container" currentDate={currentDate} />}
             />
             <CalendarGrid 
               currentDate={currentDate}
