@@ -6,9 +6,9 @@ import HolidayCountdownWidget from './HolidayCountdownWidget.tsx';
 const Sidebar: React.FC = () => {
   return (
     <aside className="lg:w-80 xl:w-96 flex-shrink-0 space-y-6">
+      <HolidayCountdownWidget />
       <WeatherWidget />
       <FootballSchedule />
-      <HolidayCountdownWidget />
     </aside>
   );
 };
