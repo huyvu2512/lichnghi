@@ -145,7 +145,7 @@ const HolidayCountdownWidget: React.FC = () => {
                     <LanternIcon />
                 </div>
                 <div className="relative z-10">
-                    <h3 className="font-bold text-lg text-gray-700 mb-4 text-center">Đếm ngược Tết Nguyên Đán</h3>
+                    <h3 className="font-bold text-lg text-gray-700 mb-3 text-center">Đếm ngược Tết Nguyên Đán</h3>
                     {renderContent()}
                 </div>
             </div>

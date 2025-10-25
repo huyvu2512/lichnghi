@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="bg-gray-50 min-h-screen font-sans flex flex-col">
       <div className="container mx-auto p-4 sm:p-6 lg:p-8 relative z-10 flex-grow">
-        <header className="text-center mb-8 flex items-center justify-center gap-3 sm:gap-4">
+        <header className="text-center mb-6 flex items-center justify-center gap-3 sm:gap-4">
             <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-lg shadow-md flex items-center justify-center">
                 <Logo className="w-8 h-8 text-indigo-600" />
             </div>

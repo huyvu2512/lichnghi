@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 // Weather Icons Components
 const SunIcon = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w.org/2000/svg" className={className} viewBox="0 0 24 24" fill="currentColor">
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="currentColor">
     <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 010 1.06l-1.591 1.59a.75.75 0 11-1.06-1.06l1.59-1.59a.75.75 0 011.06 0zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.894 17.894a.75.75 0 01-1.06 0l-1.59-1.591a.75.75 0 111.06-1.06l1.59 1.59a.75.75 0 010 1.061zM12 18.75a.75.75 0 01-.75.75v2.25a.75.75 0 011.5 0V19.5a.75.75 0 01-.75-.75zM5.106 17.894a.75.75 0 010-1.06l1.59-1.591a.75.75 0 011.06 1.06l-1.59 1.59a.75.75 0 01-1.06 0zM2.25 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3a.75.75 0 01-.75-.75zM6.106 5.106a.75.75 0 011.06 0l1.591 1.59a.75.75 0 01-1.06 1.06l-1.59-1.59a.75.75 0 010-1.06z" />
   </svg>
 );
 const CloudIcon = ({ className }: { className?: string }) => (
-  <svg xmlns="http://www.w.org/2000/svg" className={className} viewBox="0 0 24 24" fill="currentColor">
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="currentColor">
      <path fillRule="evenodd" d="M11.275 2.043a.75.75 0 01.274.653 8.976 8.976 0 00-1.033 4.219.75.75 0 01-1.48.222A10.476 10.476 0 0110.1 1.51.75.75 0 0111.275 2.043zM3.42 5.06a.75.75 0 01.916.388 9 9 0 003.58 3.58.75.75 0 01-.915.388 10.501 10.501 0 01-4-4 .75.75 0 01.42-.856zM14.08 3.91a.75.75 0 01.856.42 10.501 10.501 0 014 4 .75.75 0 11-.916.388 9 9 0 00-3.58-3.58.75.75 0 01.388-.916zM18.94 10.86a.75.75 0 01.388.915 10.504 10.504 0 01-4 4 .75.75 0 01-.388-.915 9.004 9.004 0 003.58-3.58.75.75 0 01.42-.42zM5.06 15.58a.75.75 0 01.856-.42 9.004 9.004 0 003.58 3.58.75.75 0 01-.388.916 10.504 10.504 0 01-4-4 .75.75 0 01-.05-.496z" clipRule="evenodd" />
   </svg>
 );
@@ -110,7 +110,7 @@ const WeatherWidget: React.FC = () => {
               <WeatherIconComponent className="h-16 w-16" />
             </div>
           </div>
-          <div className="mt-4 pt-4 border-t border-gray-200/80 flex justify-between text-sm text-gray-600">
+          <div className="mt-3 pt-3 border-t border-gray-200/80 flex justify-between text-sm text-gray-600">
              <span>Độ ẩm: <span className="font-semibold text-gray-800">{weather.humidity}%</span></span>
              <span>Gió: <span className="font-semibold text-gray-800">{weather.windSpeed} km/h</span></span>
           </div>

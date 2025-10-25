@@ -13,7 +13,7 @@ interface DayCellProps {
 
 const DayCell: React.FC<DayCellProps> = ({ day, dayKey, dayData, onUpdateDay, isToday, isPast }) => {
   const cellClasses = [
-    "relative border-r border-b border-gray-200/80 p-1.5 min-h-[100px] flex flex-col group transition-colors duration-200",
+    "relative border-r border-b border-gray-200/80 p-1.5 min-h-[92px] flex flex-col group transition-colors duration-200",
     isPast ? "bg-gray-50/60 text-gray-400 pointer-events-none opacity-70" : "bg-white hover:bg-indigo-50/50",
   ].join(' ');
 
@@ -28,7 +28,7 @@ const DayCell: React.FC<DayCellProps> = ({ day, dayKey, dayData, onUpdateDay, is
       <span className={dayNumberClasses}>
         {day}
       </span>
-      <div className="flex flex-col justify-end flex-grow mt-6 space-y-1.5">
+      <div className="flex flex-col justify-end flex-grow mt-5 space-y-1">
         <TimeSlot 
           label="Sáng - Trưa"
           isChecked={dayData.morning || false}

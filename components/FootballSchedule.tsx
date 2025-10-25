@@ -116,11 +116,11 @@ const FootballSchedule: React.FC = () => {
         return (
             <>
                 <ul className="space-y-3">
-                    {matches.slice(0, 3).map(match => (
+                    {matches.slice(0, 2).map(match => (
                         <MatchItem key={match.id} match={match} />
                     ))}
                 </ul>
-                {matches.length > 3 && (
+                {matches.length > 2 && (
                     <button 
                         onClick={handleOpenModal}
                         className="w-full mt-4 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition-colors py-2 rounded-lg bg-indigo-50 hover:bg-indigo-100"
