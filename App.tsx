@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from 'react';
-import CalendarHeader from './components/CalendarHeader';
-import CalendarGrid from './components/CalendarGrid';
-import Sidebar from './components/Sidebar';
-import ScrollToTopButton from './components/ScrollToTopButton';
-import { useCalendarData } from './hooks/useCalendarData';
+import CalendarHeader from './components/CalendarHeader.tsx';
+import CalendarGrid from './components/CalendarGrid.tsx';
+import Sidebar from './components/Sidebar.tsx';
+import ScrollToTopButton from './components/ScrollToTopButton.tsx';
+import { useCalendarData } from './hooks/useCalendarData.ts';
 
 function App() {
   const [currentDate, setCurrentDate] = useState(new Date());

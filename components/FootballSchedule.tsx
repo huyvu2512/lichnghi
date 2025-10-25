@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { Match } from '../types';
+import type { Match } from '../types.ts';
 
 // MOCK DATA has been meticulously updated with the latest, accurate schedule from official sources.
 const MOCK_MATCHES: Match[] = [

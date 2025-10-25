@@ -1,7 +1,7 @@
 import React from 'react';
-import WeatherWidget from './WeatherWidget';
-import FootballSchedule from './FootballSchedule';
-import HolidayCountdownWidget from './HolidayCountdownWidget';
+import WeatherWidget from './WeatherWidget.tsx';
+import FootballSchedule from './FootballSchedule.tsx';
+import HolidayCountdownWidget from './HolidayCountdownWidget.tsx';
 
 const Sidebar: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import RealTimeClock from './RealTimeClock';
+import RealTimeClock from './RealTimeClock.tsx';
 
 interface CalendarHeaderProps {
   currentDate: Date;

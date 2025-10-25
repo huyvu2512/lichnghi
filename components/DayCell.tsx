@@ -1,6 +1,6 @@
 import React from 'react';
-import TimeSlot from './TimeSlot';
-import type { DayData } from '../types';
+import TimeSlot from './TimeSlot.tsx';
+import type { DayData } from '../types.ts';
 
 interface DayCellProps {
   day: number;

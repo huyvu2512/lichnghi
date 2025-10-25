@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
-import type { CalendarData } from '../types';
+import type { CalendarData } from '../types.ts';
 
 const CALENDAR_DATA_KEY = "calendarData";
 

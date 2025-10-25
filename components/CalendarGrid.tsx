@@ -1,6 +1,6 @@
 import React from 'react';
-import DayCell from './DayCell';
-import type { CalendarData, DayData } from '../types';
+import DayCell from './DayCell.tsx';
+import type { CalendarData, DayData } from '../types.ts';
 
 interface CalendarGridProps {
   currentDate: Date;
