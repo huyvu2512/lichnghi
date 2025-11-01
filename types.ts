@@ -35,3 +35,21 @@ export interface User {
   email: string;
   picture: string;
 }
+
+// Types for Google People API
+export interface Birthday {
+  date: {
+    year?: number;
+    month: number;
+    day: number;
+  };
+  text: string;
+}
+
+export interface GooglePerson {
+  resourceName: string;
+  names: [{
+    displayName: string;
+  }];
+  birthdays: Birthday[];
+}
