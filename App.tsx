@@ -7,6 +7,7 @@ import { useCalendarData } from './hooks/useCalendarData.ts';
 import Logo from './components/Logo.tsx';
 import Footer from './components/Footer.tsx';
 import DownloadButton from './components/DownloadButton.tsx';
+import Auth from './components/Auth.tsx';
 
 function App() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -27,7 +28,8 @@ function App() {
   return (
     <div className="bg-gray-50 min-h-screen font-sans flex flex-col">
       <div className="container mx-auto p-4 sm:p-6 lg:p-8 relative z-10 flex-grow">
-        <header className="text-center mb-6 flex items-center justify-center gap-3 sm:gap-4">
+        <header className="flex items-center justify-between mb-6">
+          <div className="flex items-center justify-start gap-3 sm:gap-4">
             <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-lg shadow-md flex items-center justify-center">
                 <Logo className="w-8 h-8 text-indigo-600" />
             </div>
@@ -44,6 +46,10 @@ function App() {
                   Huy Vũ
                 </a>
             </h1>
+          </div>
+          <div className="relative z-30">
+            <Auth />
+          </div>
         </header>
 
         <main className="flex flex-col lg:flex-row gap-8">

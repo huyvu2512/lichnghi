@@ -28,3 +28,10 @@ export interface Match {
   awayTeam: Team;
   utcDate: string;
 }
+
+// Type for User
+export interface User {
+  name: string;
+  email: string;
+  picture: string;
+}
